@@ -1,0 +1,205 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+body{
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container{
+  height: 500px;
+  background-color: black;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.timer{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  margin-top: -150px;
+  margin-bottom: 150px;
+}
+
+h2{
+    color: white;
+    font-size: 45px;
+    opacity: 50%;
+}
+
+#dot{
+  font-size: 45px;
+  color: white;
+  margin-left: 24px;
+  position: absolute;
+  right: 107px;
+  opacity: 50%;
+}
+
+#doubDot{
+  font-size: 45px;
+  margin-bottom: 8px;
+  position: absolute;
+   left: 106px;
+  color: white;
+  opacity: 50%;
+}
+
+.minContainer{
+  position: absolute;
+  left: 45px;
+}
+.secContainer{
+  position: absolute;
+}
+.milliContainer{
+  position: absolute;
+  right: 45px;
+}
+.markContainer{
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin: 0;  
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.marksContent{
+  color: white;
+  display: flex;
+  justify-content:space-around;
+}
+
+hr{
+  background-color: #ffffff;
+  width: 80%;
+}
+
+.timeMarked{
+  display: flex;
+  flex-direction: row; 
+  height: 100%;
+}
+
+#markId{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100%;
+}
+
+#markTime{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+} 
+#markedList{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  text-align: center;
+}
+
+#markId > p{
+  padding: 5px;
+  display: block; 
+  display: flex;
+  flex-direction: row;
+}
+
+.controls{
+  display: flex;
+  position: absolute;
+  bottom: 70px;
+  /* border: 1px solid red; */
+  text-align: center;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+#start:hover{
+  opacity: 50%;
+  transition: ease-in-out 0.2s;
+}
+#stop:hover{
+  opacity: 50%;
+  transition: ease-in-out 0.2s;
+}
+#mark:hover{
+  opacity: 50%;
+  transition: ease-in-out 0.2s;
+}
+
+
+button{
+  font-size: 20px;
+  background-color: transparent;
+  border-style: none;
+}
+
+i{
+  font-size: 50px ;
+  color: white;
+}
+
+#markTime > p{
+  display: flex;
+  flex-direction: row;
+}
+
+p{
+  font-size: 12px;
+  transition: 0.3 ease-in-out;
+  animation: test 1s ;  
+}
+
+#markMsg{
+  text-align: center;
+  opacity: 50%;
+}
+
+#timeId{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 10%;
+  margin-right: 100px;
+}
+#timeMin{
+  display: flex;
+  flex-direction: column-reverse;
+}
+#timeSec{
+  display: flex;
+  flex-direction: column-reverse;
+}
+#timeMilliSec{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 10%;
+}
